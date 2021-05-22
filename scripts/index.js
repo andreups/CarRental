@@ -35,11 +35,11 @@ function estimateBtnClicked() {
         options += (2.95 * numberOfDays);
     }
 
-    let surcharge;
+    let surcharge =0;
 
     const yesUnderRadioBtn = document.getElementById("yesUnder");
     if (yesUnderRadioBtn.checked == true) {
-        surcharge == (carRental * .30);
+        surcharge += (carRental * .30);
     }
    
     let  totalDue = carRental + options + surcharge;
@@ -57,5 +57,5 @@ function estimateBtnClicked() {
     surchargePara.innerHTML = "Under 25 surcharge: $" + surcharge.toFixed(2);
     
     const totalDuePara = document.getElementById("totalDue");
-    totalDuePara.innerHTML = "Total due: " + totalDue.toFixed(2);
+    totalDuePara.innerHTML = "Total due $: " + totalDue.toFixed(2);
 }
