@@ -12,21 +12,21 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-image: url('img/bgcar.jpg')">
     <div class="container">
         <div class="row justify-content-center align-items-center" style="height:100vh">
             <div class="col-lg-6">
-                <div class="card">
+                <div style="background-color: rgba(51, 32, 8, 0.527); color: rgb(239, 255, 255);" class="card">
                     <div class="card-body">
                         <form id="Rental Rates">
                             <div class="container form-group">
                                 <h3>ACME Car Rental</h3>
 
                                 <p><label for="pickupDate"><b>Pickup Date</b></label>
-                                    <input type="text" class="form-control" id="rentalDate" required="">
+                                    <input type="date" class="form-control" id="rentalDate" required="">
                                 </p>
                                 <p><label for="numberOfDays"><b>Number of Days</b></label>
-                                    <input type="text" class="form-control" id="numberOfDays" required="">
+                                    <input type="number" min="1" class="form-control" id="numberOfDays" required="">
                                 </p>
                                 <p>
                                     <b>Options</b><br><br>
@@ -54,8 +54,7 @@
                                 <p id="carRental"></p>
                                 <p id="options"></p>
                                 <p id="surcharge"></p>
-                                <br>
-                                <p id="totalDue"></p>
+                                <p id="totalDue" style="font-weight: 700"></p>
 
                             </div>
 
